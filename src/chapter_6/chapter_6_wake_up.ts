@@ -1,4 +1,4 @@
-import { endAdventure, haveAdventures } from "../..";
+import { endAdventure } from "../..";
 import { askQuestion, clear, print } from "../ui/console";
 import { doMorningRoutine } from "../chapter_7/chapter_7_morning_routine";
 

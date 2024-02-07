@@ -1,4 +1,5 @@
 import { askQuestion, clear, print } from "../ui/console";
+import { haveAdventures } from "../..";
 
 const EXERCISE = ["yoga", "running"] as const;
 type MorningExercise = (typeof EXERCISE)[number];
@@ -23,6 +24,8 @@ export function doMorningRoutine(): void {
 
   const exerciseGear = prepareForExercise(todaysExercise);
   print(`OK! Got my ${exerciseGear}. Let's go!`);
+
+  return askQuestion("Press ENTER to re-enter Wonderland! ", haveAdventures);
 }
 
 function checkWeather() {
